@@ -54,4 +54,13 @@ export class HomeComponent implements OnInit {
       }
     });
   }
+
+  checkURL(){
+    if(this.link.longUrl.indexOf("http")) {
+      this.link.longUrl = "http://" + this.link.longUrl;
+      console.log(this.link.longUrl)
+    }
+    console.log(this.link.longUrl)
+
+  }
 }
